@@ -1,16 +1,12 @@
-provider "aws"{
-  region = "ap-southeast-2"
-}
-
-
-resource "aws_instance" "AWSInstance"{
-    ami = "ami-08cd0547bf85331e7"
+provider "aws" { 
+	region = "us-east-1"
+} 
+resource "aws_instance"  "Aws_ec2_instance"{
+	ami = "ami-0aa7d40eeae50c9a9"
 	instance_type = "t2.micro"
-	key_name = "devopstrainingmss"
-	security_groups = ["launch-wizard-2"]
+	key_name = "Myserver1"
+	security_groups = ["launch-wizard-23"]
 	tags = {
-	 Name = "tomcatservers"
-	}
+	  Name = "Tomcat Server"
+    }
 }
-
-
