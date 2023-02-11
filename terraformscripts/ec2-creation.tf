@@ -5,7 +5,7 @@ resource "aws_instance"  "AWSInstance"{
 	ami = "ami-0aa7d40eeae50c9a9"
 	instance_type = "t2.micro"
 	key_name = "Myserver1"
-	security_groups = ["launch-wizard-23"]
+	security_groups = ["launch-wizard-2"]
 	tags = {
 	  Name = "Tomcat Server"
     }
