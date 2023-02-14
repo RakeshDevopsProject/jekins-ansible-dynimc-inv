@@ -7,6 +7,6 @@ resource "aws_instance" "AwsInstance"{
 	key_name = "Myserver1"
 	security_groups = ["launch-wizard-2"]
 	tags = {
-	  Name = "TomcatServer"
+	  Name = "TomcatServer2"
     }
 }
