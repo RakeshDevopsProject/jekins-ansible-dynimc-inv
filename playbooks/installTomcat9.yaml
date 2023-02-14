@@ -1,4 +1,4 @@
-- hosts: TomcatServer
+- hosts: Rakeshserver
   become: true
   tasks:
     - name: Install Java
